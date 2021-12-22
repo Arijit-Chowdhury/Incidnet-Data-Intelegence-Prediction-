@@ -64,7 +64,7 @@ def predict():
     output=json.loads(output)
     import pypyodbc    
     from datetime import datetime
-    connection = pypyodbc.connect('Driver={SQL Server Native Client 11.0};Server=ftlqsmasql01;Database=SystemData;Trusted_Connection=yes;')    
+    connection = pypyodbc.connect('Driver={SQL Server Native Client 11.0};Server=.;Database=SystemData;Trusted_Connection=yes;')    
     alert_desc = content['Description']   
     login_time= datetime.now()
     Source = request.remote_addr
